@@ -21,10 +21,14 @@ yarn add in-selector
 ```js
 const { inSelector } = require( 'in-selector' )
 
-inSelector( '.a', '.a, .b' ) // -> true, check class
-inSelector( '#b', '#a, #b:hover' ) // -> true, check id
-inSelector( 'div', '.klass > div' ) // -> true, check tag
-inSelector( '*', 'html *, body' ) // -> true, check universal
+// check class
+inSelector( '.a', '.a, .b' ) // -> true
+// check id
+inSelector( '#b', '#a, #b:hover' ) // -> true
+// check tag
+inSelector( 'div', '.klass > div' ) // -> true
+// check universal
+inSelector( '*', 'html *, body' ) // -> true
 ```
 
 # License
